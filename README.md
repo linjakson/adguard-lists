@@ -1,25 +1,25 @@
 # adguard-lists
 
-Custom AdGuard Home filter list for client-specific blocking rules.
+此專案提供 AdGuard Home 的自訂過濾清單，透過 `$client=IP` 針對特定裝置套用不同的封鎖規則。
 
-## What this repository does
+## 專案用途
 
-- Maintains `agh-custom.txt`, a list of AdGuard filter rules.
-- Targets specific devices via `$client=IP` to apply different blocking scopes.
-- Focuses on blocking selected domains (including many mainland China sites) for chosen clients.
+- 維護 `agh-custom.txt`，作為 AdGuard Home 的主要過濾清單。
+- 依裝置 IP（`$client=IP`）套用不同封鎖範圍。
+- 目前規則以封鎖指定網域（含部分中國網站）為主。
 
-## Files
+## 檔案說明
 
-- `agh-custom.txt` — the active filter list used by AdGuard Home.
+- `agh-custom.txt` — AdGuard Home 使用的清單檔。
 
-## How to use
+## 使用方式
 
-1. Add the raw list URL to AdGuard Home:
+1. 在 AdGuard Home 加入清單網址：
    - `https://raw.githubusercontent.com/linjakson/adguard-lists/main/agh-custom.txt`
-2. Reload filters and confirm rules are taking effect in the query log.
+2. 重新載入過濾器後，至 Query Log 確認規則是否生效。
 
-## Contributing
+## 參與貢獻
 
-- Follow `AGENTS.md` for repository guidelines.
-- Keep rules grouped and one per line.
-- Validate changes in AdGuard Home before pushing.
+- 請先閱讀 `AGENTS.md`。
+- 規則一行一條，並依用途分組。
+- 變更後務必在 AdGuard Home 端驗證。
